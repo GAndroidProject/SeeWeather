@@ -17,6 +17,8 @@ android {
 
         buildConfigField "String", "$rootProject.ext.weather.name", "\"$rootProject.ext.weather.value\""
         buildConfigField "String", "$rootProject.ext.fir.name", "\"$rootProject.ext.fir.value\""
+
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -48,8 +50,9 @@ android {
 
         exclude 'META-INF/services/javax.annotation.processing.Processor'
     }
-}
 
+
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     // 默认 UI
